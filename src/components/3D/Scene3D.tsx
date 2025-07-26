@@ -3,6 +3,8 @@ import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { FloatingCube } from "./FloatingCube";
 
 export const Scene3D = () => {
+  console.log('Scene3D: Component rendering...');
+  
   return (
     <div className="absolute inset-0 -z-10">
       <Canvas>

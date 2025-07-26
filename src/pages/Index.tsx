@@ -8,6 +8,7 @@ import { CodingProfilesSection } from "@/components/sections/CodingProfilesSecti
 import { ContactSection } from "@/components/sections/ContactSection";
 
 const Index = () => {
+  console.log('Index.tsx: Index component rendering...');
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <Navigation />

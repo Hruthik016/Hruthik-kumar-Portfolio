@@ -4,6 +4,8 @@ import { loadSlim } from "tsparticles-slim";
 import type { Engine } from "tsparticles-engine";
 
 export const ParticleBackground = () => {
+  console.log('ParticleBackground: Component rendering...');
+  
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadSlim(engine);
   }, []);

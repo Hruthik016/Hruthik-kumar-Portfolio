@@ -13,12 +13,16 @@ const socialLinks = [
 ];
 
 export const HeroSection = () => {
+  console.log('HeroSection: Component rendering...');
+  
   const scrollToContact = () => {
     const element = document.querySelector("#contact");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  console.log('HeroSection: About to render JSX...');
 
   return (
     <section id="hero" className="section-container relative">
