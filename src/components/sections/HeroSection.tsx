@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, Instagram, Youtube, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ParticleBackground } from "../ParticleBackground";
-import { Scene3D } from "../3D/Scene3D";
+import { SimpleBackground } from "../SimpleBackground";
 
 const socialLinks = [
   { icon: Github, href: "#", label: "GitHub" },
@@ -26,8 +25,7 @@ export const HeroSection = () => {
 
   return (
     <section id="hero" className="section-container relative">
-      <ParticleBackground />
-      <Scene3D />
+      <SimpleBackground />
       
       <div className="container mx-auto px-6 z-10 text-center">
         <motion.div
