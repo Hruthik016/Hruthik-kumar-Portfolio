@@ -60,11 +60,11 @@ export const HeroSection = () => {
           delay: 0.5
         }} className="space-y-4">
             <h1 className="text-6xl md:text-8xl font-bold">
-              <span className="gradient-text text-shadow-glow">Fullstack Develepor
+              <span className="gradient-text text-shadow-glow">Hruthik Kumar
             </span>
             </h1>
             <h2 className="text-2xl md:text-4xl text-foreground/80">
-              Tech Explorer & Digital Architect
+              Fullstack Developer & Tech Explorer
             </h2>
           </motion.div>
 
