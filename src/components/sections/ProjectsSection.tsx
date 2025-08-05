@@ -148,21 +148,6 @@ export const ProjectsSection = () => {
             ))}
           </div>
 
-          {/* View More Button */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, delay: 1.2 }}
-            className="text-center mt-12"
-          >
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-primary/30 hover:bg-primary/10 hover:scale-105 transition-all duration-300"
-            >
-              View All Projects
-            </Button>
-          </motion.div>
         </motion.div>
       </div>
     </section>
