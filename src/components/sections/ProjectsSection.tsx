@@ -7,9 +7,9 @@ import { Card } from "@/components/ui/card";
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include real-time inventory, payment integration, and admin dashboard.",
-    tech: ["React", "Node.js", "MongoDB", "Stripe", "Redux"],
+    title: "Internal Mark Management & Parent Notification System",
+    description: "Built a web-based internal marks entry system with automated PDF generation. Integrated WhatsApp messaging for parent notifications via API.",
+    tech: ["HTML/CSS", "JavaScript", "Flask", "SQL"],
     image: "/placeholder.svg",
     github: "#",
     demo: "#",
@@ -17,9 +17,9 @@ const projects = [
   },
   {
     id: 2,
-    title: "AI Chat Application",
-    description: "Real-time chat application with AI integration using OpenAI API. Includes group chats, file sharing, and smart responses.",
-    tech: ["Next.js", "WebSocket", "OpenAI", "PostgreSQL"],
+    title: "Road Crack Detection using YOLOv11",
+    description: "Built a deep learning model to detect road surface cracks in real-time using YOLOv11. Preprocessed image datasets and trained a custom object detection model with high precision in detecting crack patterns from varied road imagery.",
+    tech: ["Python", "OpenCV", "YOLOv11", "Deep Learning"],
     image: "/placeholder.svg",
     github: "#",
     demo: "#",
@@ -27,19 +27,9 @@ const projects = [
   },
   {
     id: 3,
-    title: "Portfolio Website",
-    description: "Interactive 3D portfolio built with Three.js and React. Features particle systems, 3D models, and smooth animations.",
-    tech: ["React", "Three.js", "Framer Motion", "GLSL"],
-    image: "/placeholder.svg",
-    github: "#",
-    demo: "#",
-    featured: false
-  },
-  {
-    id: 4,
-    title: "Task Management App",
-    description: "Collaborative task management with real-time updates, drag-and-drop interface, and team analytics.",
-    tech: ["Vue.js", "Firebase", "Chart.js", "PWA"],
+    title: "Conveyor Belt Damage Detection – NLCIL",
+    description: "Participated in a live industrial project detecting belt damage via sensors. Gained hands-on experience with backend logic and hardware-software interfacing.",
+    tech: ["Sensors", "Backend Logic", "Hardware Integration"],
     image: "/placeholder.svg",
     github: "#",
     demo: "#",
