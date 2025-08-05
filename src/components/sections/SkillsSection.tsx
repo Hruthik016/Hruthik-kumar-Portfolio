@@ -3,51 +3,50 @@ import { useRef } from "react";
 
 const skillCategories = [
   {
-    title: "Frontend",
+    title: "Programming Languages",
     color: "from-purple-500 to-blue-500",
     skills: [
-      { name: "React", level: 95 },
-      { name: "TypeScript", level: 90 },
-      { name: "Next.js", level: 85 },
-      { name: "Vue.js", level: 80 },
-      { name: "Tailwind CSS", level: 95 },
-      { name: "Framer Motion", level: 85 }
+      { name: "Python", level: 90 },
+      { name: "C", level: 85 },
+      { name: "SQL", level: 88 },
+      { name: "Java", level: 60 },
+      { name: "C#", level: 60 }
     ]
   },
   {
-    title: "Backend",
+    title: "Web Development",
     color: "from-green-500 to-teal-500",
     skills: [
-      { name: "Node.js", level: 90 },
-      { name: "Python", level: 85 },
-      { name: "Express.js", level: 88 },
-      { name: "PostgreSQL", level: 82 },
-      { name: "MongoDB", level: 85 },
-      { name: "Redis", level: 75 }
+      { name: "HTML", level: 95 },
+      { name: "CSS", level: 90 },
+      { name: "JavaScript", level: 85 },
+      { name: "Flask", level: 80 },
+      { name: "PHP", level: 65 }
     ]
   },
   {
-    title: "Tools & Cloud",
+    title: "Database & Tools",
     color: "from-orange-500 to-red-500",
     skills: [
-      { name: "AWS", level: 80 },
-      { name: "Docker", level: 85 },
-      { name: "Git", level: 95 },
-      { name: "Jenkins", level: 75 },
-      { name: "Kubernetes", level: 70 },
-      { name: "Terraform", level: 65 }
+      { name: "MySQL", level: 85 },
+      { name: "SQLite", level: 90 },
+      { name: "Git", level: 92 },
+      { name: "GitHub", level: 90 },
+      { name: "XAMPP", level: 80 },
+      { name: "VS Code", level: 95 }
     ]
   },
   {
-    title: "Design & 3D",
+    title: "Core Concepts",
     color: "from-pink-500 to-purple-500",
     skills: [
-      { name: "Three.js", level: 85 },
-      { name: "Blender", level: 70 },
-      { name: "Figma", level: 80 },
-      { name: "WebGL", level: 75 },
-      { name: "GSAP", level: 85 },
-      { name: "Shader Programming", level: 65 }
+      { name: "OOP", level: 88 },
+      { name: "Data Structures", level: 85 },
+      { name: "Algorithms", level: 82 },
+      { name: "Networking", level: 75 },
+      { name: "Cloud Computing", level: 70 },
+      { name: "SDLC", level: 80 },
+      { name: "Agile", level: 78 }
     ]
   }
 ];
