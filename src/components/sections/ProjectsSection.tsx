@@ -1,6 +1,5 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-// import { ExternalLink, Github, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
@@ -112,33 +111,6 @@ export const ProjectsSection = () => {
                       alt={project.title}
                       className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    
-                    {/* Hover Actions */}
-                    <div className="absolute inset-0 flex items-center justify-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <Button
-                        size="sm"
-                        variant="secondary"
-                        className="backdrop-blur-sm"
-                        asChild
-                      >
-                        <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                          <Eye className="w-4 h-4 mr-2" />
-                          Demo
-                        </a>
-                      </Button>
-                      <Button
-                        size="sm"
-                        variant="outline"
-                        className="backdrop-blur-sm border-white/20"
-                        asChild
-                      >
-                        <a href={project.github} target="_blank" rel="noopener noreferrer">
-                          <Github className="w-4 h-4 mr-2" />
-                          Code
-                        </a>
-                      </Button>
-                    </div>
 
                     {project.featured && (
                       <div className="absolute top-4 right-4">
@@ -170,31 +142,6 @@ export const ProjectsSection = () => {
                       ))}
                     </div>
 
-                    {/* Links */}
-                    <div className="flex space-x-4">
-                      <Button
-                        size="sm"
-                        variant="ghost"
-                        className="hover:text-primary"
-                        asChild
-                      >
-                        <a href={project.github} target="_blank" rel="noopener noreferrer">
-                          <Github className="w-4 h-4 mr-2" />
-                          GitHub
-                        </a>
-                      </Button>
-                      <Button
-                        size="sm"
-                        variant="ghost"
-                        className="hover:text-secondary"
-                        asChild
-                      >
-                        <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="w-4 h-4 mr-2" />
-                          Live Demo
-                        </a>
-                      </Button>
-                    </div>
                   </div>
                 </Card>
               </motion.div>
