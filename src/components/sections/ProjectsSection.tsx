@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { ExternalLink, Github, Eye } from "lucide-react";
+// import { ExternalLink, Github, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
@@ -11,8 +11,6 @@ const projects = [
     description: "Built a web-based internal marks entry system with automated PDF generation. Integrated WhatsApp messaging for parent notifications via API.",
     tech: ["HTML/CSS", "JavaScript", "Flask", "SQL"],
     image: "/placeholder.svg",
-    github: "#",
-    demo: "#",
     featured: true
   },
   {
@@ -21,8 +19,6 @@ const projects = [
     description: "Built a deep learning model to detect road surface cracks in real-time using YOLOv11. Preprocessed image datasets and trained a custom object detection model with high precision in detecting crack patterns from varied road imagery.",
     tech: ["Python", "OpenCV", "YOLOv11", "Deep Learning"],
     image: "/placeholder.svg",
-    github: "#",
-    demo: "#",
     featured: true
   },
   {
@@ -31,8 +27,6 @@ const projects = [
     description: "Participated in a live industrial project detecting belt damage via sensors. Gained hands-on experience with backend logic and hardware-software interfacing.",
     tech: ["Sensors", "Backend Logic", "Hardware Integration"],
     image: "/placeholder.svg",
-    github: "#",
-    demo: "#",
     featured: false
   }
 ];
