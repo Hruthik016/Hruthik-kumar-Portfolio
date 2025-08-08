@@ -104,30 +104,7 @@ export const HeroSection = () => {
           </motion.div>
 
           {/* Social Links */}
-          <motion.div initial={{
-          opacity: 0,
-          scale: 0.5
-        }} animate={{
-          opacity: 1,
-          scale: 1
-        }} transition={{
-          duration: 0.8,
-          delay: 1.5
-        }} className="flex justify-center space-x-6 mt-16">
-            {socialLinks.map((social, index) => <motion.a key={social.label} href={social.href} whileHover={{
-            scale: 1.2,
-            rotate: 360,
-            boxShadow: "0 0 25px hsl(var(--primary) / 0.6)"
-          }} whileTap={{
-            scale: 0.9
-          }} transition={{
-            type: "spring",
-            stiffness: 400,
-            damping: 10
-          }} className="p-4 rounded-full glass-morphism hover:bg-primary/20 transition-colors duration-300" aria-label={social.label}>
-                <social.icon className="w-6 h-6 text-primary" />
-              </motion.a>)}
-          </motion.div>
+          
 
           {/* Scroll Indicator */}
           <motion.div initial={{

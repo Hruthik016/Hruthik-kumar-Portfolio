@@ -70,20 +70,7 @@ export const AboutSection = () => {
                 <p>In addition to technical skills, I’m well-versed in concepts like OOP, Data Structures, SDLC, and Agile methodologies. I’m a fast learner, a great team player, and always eager to take on new challenges and expand my knowledge.</p>
               </div>
 
-              <motion.div initial={{
-              opacity: 0,
-              y: 20
-            }} animate={isInView ? {
-              opacity: 1,
-              y: 0
-            } : {}} transition={{
-              duration: 0.8,
-              delay: 0.8
-            }} className="flex flex-wrap gap-4">
-                {["React", "TypeScript", "Node.js", "Python", "AWS"].map((tech, index) => <span key={tech} className="px-4 py-2 bg-primary/10 border border-primary/30 rounded-full text-primary font-medium">
-                    {tech}
-                  </span>)}
-              </motion.div>
+              
             </motion.div>
 
             {/* Features Grid */}
