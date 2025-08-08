@@ -6,16 +6,30 @@ import { Card } from "@/components/ui/card";
 const education = [
   {
     id: 1,
-    degree: "Bachelor of Engineering in Computer Science",
+    degree: "Bachelor of Engineering (B.E.), Computer Science and Engineering",
     institution: "Anna University",
     location: "Chennai, Tamil Nadu",
-    duration: "2020 - 2024",
+    duration: "Nov 2021 – May 2025",
     cgpa: "8.0",
     description: "Comprehensive study of computer science fundamentals including programming, data structures, algorithms, database management, and software engineering principles.",
     achievements: [
       "Maintained consistent academic performance with 8.0 CGPA",
       "Completed projects in web development and machine learning",
       "Participated in coding competitions and technical events"
+    ]
+  },
+  {
+    id: 2,
+    degree: "Higher Secondary Certificate (HSC)",
+    institution: "Govt. Higher Secondary School, Arumanai",
+    location: "Tamil Nadu",
+    duration: "May 2021",
+    cgpa: "80%",
+    description: "Higher secondary education with focus on science subjects preparing for engineering entrance examinations.",
+    achievements: [
+      "Achieved 80% in HSC examinations",
+      "Strong foundation in Mathematics and Science subjects",
+      "Qualified for engineering entrance examinations"
     ]
   }
 ];
