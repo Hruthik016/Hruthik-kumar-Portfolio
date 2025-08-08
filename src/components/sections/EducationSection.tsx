@@ -11,12 +11,7 @@ const education = [
     location: "Chennai, Tamil Nadu",
     duration: "Nov 2021 – May 2025",
     cgpa: "8.0",
-    description: "Comprehensive study of computer science fundamentals including programming, data structures, algorithms, database management, and software engineering principles.",
-    achievements: [
-      "Maintained consistent academic performance with 8.0 CGPA",
-      "Completed projects in web development and machine learning",
-      "Participated in coding competitions and technical events"
-    ]
+    description: "Comprehensive study of computer science fundamentals including programming, data structures, algorithms, database management, and software engineering principles."
   },
   {
     id: 2,
@@ -25,12 +20,7 @@ const education = [
     location: "Tamil Nadu",
     duration: "May 2021",
     cgpa: "80%",
-    description: "Higher secondary education with focus on science subjects preparing for engineering entrance examinations.",
-    achievements: [
-      "Achieved 80% in HSC examinations",
-      "Strong foundation in Mathematics and Science subjects",
-      "Qualified for engineering entrance examinations"
-    ]
+    description: "Higher secondary education with focus on science subjects preparing for engineering entrance examinations."
   }
 ];
 
@@ -64,8 +54,8 @@ export const EducationSection = () => {
             <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full mt-6" />
           </motion.div>
 
-          {/* Education Timeline */}
-          <div className="space-y-8">
+          {/* Education Grid */}
+          <div className="grid md:grid-cols-2 gap-8">
             {education.map((edu, index) => (
               <motion.div
                 key={edu.id}
@@ -74,82 +64,53 @@ export const EducationSection = () => {
                 transition={{ duration: 0.8, delay: 0.4 + index * 0.2 }}
                 className="group"
               >
-                <Card className="glass-morphism p-8 hover:shadow-glow transition-all duration-500">
-                  <div className="grid lg:grid-cols-3 gap-8 items-start">
-                    {/* Institution Info */}
-                    <div className="lg:col-span-2 space-y-6">
-                      <div className="space-y-4">
-                        <div className="flex items-start gap-4">
-                          <div className="p-3 bg-primary/10 rounded-xl group-hover:bg-primary/20 transition-colors duration-300">
-                            <GraduationCap className="w-6 h-6 text-primary" />
-                          </div>
-                          <div className="flex-1">
-                            <h3 className="text-2xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
-                              {edu.degree}
-                            </h3>
-                            <h4 className="text-xl font-semibold text-foreground/80 mb-4">
-                              {edu.institution}
-                            </h4>
-                          </div>
-                        </div>
-
-                        <div className="flex flex-wrap gap-6 text-muted-foreground">
-                          <div className="flex items-center gap-2">
-                            <Calendar className="w-4 h-4" />
-                            <span>{edu.duration}</span>
-                          </div>
-                          <div className="flex items-center gap-2">
-                            <MapPin className="w-4 h-4" />
-                            <span>{edu.location}</span>
-                          </div>
-                          <div className="flex items-center gap-2">
-                            <Award className="w-4 h-4" />
-                            <span>CGPA: {edu.cgpa}</span>
-                          </div>
-                        </div>
-
-                        <p className="text-foreground/80 leading-relaxed">
-                          {edu.description}
-                        </p>
+                <Card className="glass-morphism p-6 hover:shadow-glow transition-all duration-500 h-full">
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-4">
+                      <div className="p-3 bg-primary/10 rounded-xl group-hover:bg-primary/20 transition-colors duration-300">
+                        <GraduationCap className="w-6 h-6 text-primary" />
                       </div>
-
-                      {/* Achievements */}
-                      <div className="space-y-3">
-                        <h5 className="font-semibold text-foreground">Key Achievements:</h5>
-                        <ul className="space-y-2">
-                          {edu.achievements.map((achievement, i) => (
-                            <li key={i} className="flex items-start gap-3 text-foreground/80">
-                              <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2.5 flex-shrink-0" />
-                              <span>{achievement}</span>
-                            </li>
-                          ))}
-                        </ul>
+                      <div className="flex-1">
+                        <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
+                          {edu.degree}
+                        </h3>
+                        <h4 className="text-lg font-semibold text-foreground/80 mb-4">
+                          {edu.institution}
+                        </h4>
                       </div>
                     </div>
 
+                    <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
+                      <div className="flex items-center gap-2">
+                        <Calendar className="w-4 h-4" />
+                        <span>{edu.duration}</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <MapPin className="w-4 h-4" />
+                        <span>{edu.location}</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Award className="w-4 h-4" />
+                        <span>CGPA: {edu.cgpa}</span>
+                      </div>
+                    </div>
+
+                    <p className="text-foreground/80 leading-relaxed text-sm">
+                      {edu.description}
+                    </p>
+
                     {/* CGPA Highlight */}
-                    <div className="lg:col-span-1">
-                      <motion.div
-                        whileHover={{ scale: 1.05, rotateY: 5 }}
-                        className="glass-morphism p-6 rounded-2xl text-center border border-primary/20"
-                      >
-                        <div className="space-y-4">
-                          <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto">
-                            <Award className="w-8 h-8 text-white" />
-                          </div>
-                          <div>
-                            <div className="text-3xl font-bold gradient-text">
-                              {edu.cgpa}
-                            </div>
-                            <div className="text-sm text-muted-foreground">
-                              CGPA out of 10
-                            </div>
+                    <div className="mt-6 pt-4 border-t border-border">
+                      <div className="flex items-center justify-center">
+                        <div className="text-center">
+                          <div className="text-2xl font-bold gradient-text">
+                            {edu.cgpa}
                           </div>
                           <div className="text-xs text-muted-foreground">
-                            Academic Excellence
+                            Academic Performance
                           </div>
                         </div>
-                      </motion.div>
+                      </div>
                     </div>
                   </div>
                 </Card>
