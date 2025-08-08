@@ -9,8 +9,8 @@ const skillCategories = [
       { name: "Python", level: 90 },
       { name: "C", level: 85 },
       { name: "SQL", level: 88 },
-      { name: "Java", level: 60 },
-      { name: "C#", level: 60 }
+      { name: "Java", level: 50 },
+      { name: "C#", level: 50 }
     ]
   },
   {
@@ -21,7 +21,7 @@ const skillCategories = [
       { name: "CSS", level: 90 },
       { name: "JavaScript", level: 85 },
       { name: "Flask", level: 80 },
-      { name: "PHP", level: 65 }
+      { name: "PHP", level: 50 }
     ]
   },
   {
@@ -29,7 +29,7 @@ const skillCategories = [
     color: "from-orange-500 to-red-500",
     skills: [
       { name: "MySQL", level: 85 },
-      { name: "SQLite", level: 90 },
+      { name: "SQLite", level: 75 },
       { name: "Git", level: 92 },
       { name: "GitHub", level: 90 },
       { name: "XAMPP", level: 80 },
@@ -43,9 +43,7 @@ const skillCategories = [
       { name: "OOP", level: 88 },
       { name: "Data Structures", level: 85 },
       { name: "Algorithms", level: 82 },
-      { name: "Networking", level: 75 },
       { name: "Cloud Computing", level: 70 },
-      { name: "SDLC", level: 80 },
       { name: "Agile", level: 78 }
     ]
   }
