@@ -16,9 +16,14 @@ export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
+    const element = document.querySelector(href) as HTMLElement;
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const navHeight = 120; // Account for fixed nav height
+      const elementPosition = element.offsetTop - navHeight;
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth"
+      });
       setIsOpen(false);
     }
   };

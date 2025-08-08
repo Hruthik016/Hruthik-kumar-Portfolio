@@ -160,7 +160,7 @@ export const SkillsSection = () => {
               </div>
 
               {/* Orbiting Tech Icons */}
-              {["React", "Node", "Python", "AWS", "Docker", "Git", "3D", "AI"].map((tech, index) => {
+              {["JavaScript", "HTML", "CSS", "MySQL", "Flask", "Git", "OOP", "Algorithms"].map((tech, index) => {
                 const angle = (index * 45) * (Math.PI / 180);
                 const radius = 120;
                 const x = Math.cos(angle) * radius;
